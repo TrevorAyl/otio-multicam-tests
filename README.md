@@ -37,7 +37,8 @@ The projects are as close as practical, but not necessarily frame-identical.
 
 In Premiere and Resolve the graphics fill and key clips are nested as one angle - in Avid they are 2 angles that are composited and then nested. 
 
-There are export folders within each NLE with an H265 and an OTIO, EDL, AAF etc. 
+There are export folders within each NLE with an OTIO & AAF. 
 
+There's a NLE reference folder with MP4s of the sequences. 
 
 
