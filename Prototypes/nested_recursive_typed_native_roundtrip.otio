@@ -1,0 +1,592 @@
+{
+    "OTIO_SCHEMA": "MulticamPackage.1",
+    "angle_definitions": [
+        {
+            "OTIO_SCHEMA": "AngleDefinition.1",
+            "angle_id": 1,
+            "definition_id": "MC_INNER",
+            "display_order": 1,
+            "group_id": "picture",
+            "label": "1",
+            "output_ref_id": "B01_VIDEO",
+            "provenance": {}
+        },
+        {
+            "OTIO_SCHEMA": "AngleDefinition.1",
+            "angle_id": 2,
+            "definition_id": "MC_INNER",
+            "display_order": 2,
+            "group_id": "picture",
+            "label": "2",
+            "output_ref_id": "B02_VIDEO",
+            "provenance": {}
+        },
+        {
+            "OTIO_SCHEMA": "AngleDefinition.1",
+            "angle_id": 1,
+            "definition_id": "MC_OUTER",
+            "display_order": 1,
+            "group_id": "picture",
+            "label": "1",
+            "output_ref_id": "OUT_QUAD",
+            "provenance": {}
+        },
+        {
+            "OTIO_SCHEMA": "AngleDefinition.1",
+            "angle_id": 2,
+            "definition_id": "MC_OUTER",
+            "display_order": 2,
+            "group_id": "picture",
+            "label": "2",
+            "output_ref_id": "OUT_GRAPHICS",
+            "provenance": {}
+        }
+    ],
+    "composite_outputs": [
+        {
+            "OTIO_SCHEMA": "CompositeOutput.1",
+            "alpha_mode": "straight",
+            "attributes": {},
+            "channels": [
+                "R",
+                "G",
+                "B",
+                "A"
+            ],
+            "operation_id": "op_quad",
+            "output_id": "QUAD_RGBA",
+            "owner_definition_id": "FOUR_BOX",
+            "stream_kind": "picture"
+        },
+        {
+            "OTIO_SCHEMA": "CompositeOutput.1",
+            "alpha_mode": "straight",
+            "attributes": {},
+            "channels": [
+                "R",
+                "G",
+                "B",
+                "A"
+            ],
+            "operation_id": "op_matte",
+            "output_id": "GRAPHICS_RGBA",
+            "owner_definition_id": "GRAPHICS",
+            "stream_kind": "picture"
+        }
+    ],
+    "composition_references": [
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_INNER",
+            "nested_selections": {},
+            "occurrence_id": "quad_TL",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_INNER",
+            "nested_selections": {},
+            "occurrence_id": "quad_TR",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_INNER",
+            "nested_selections": {},
+            "occurrence_id": "quad_BL",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_INNER",
+            "nested_selections": {},
+            "occurrence_id": "quad_BR",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "FOUR_BOX",
+            "nested_selections": {},
+            "occurrence_id": "outer_quad",
+            "selections": {},
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "GRAPHICS",
+            "nested_selections": {},
+            "occurrence_id": "outer_graphic",
+            "selections": {},
+            "timing": {
+                "duration_frames": 100,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_OUTER",
+            "nested_selections": {
+                "outer_quad/quad_BL": {
+                    "picture": 1
+                },
+                "outer_quad/quad_BR": {
+                    "picture": 2
+                },
+                "outer_quad/quad_TL": {
+                    "picture": 1
+                },
+                "outer_quad/quad_TR": {
+                    "picture": 2
+                }
+            },
+            "occurrence_id": "edit_1",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 50,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositionReference.1",
+            "attributes": {},
+            "definition_id": "MC_OUTER",
+            "nested_selections": {
+                "outer_quad/quad_BL": {
+                    "picture": 2
+                },
+                "outer_quad/quad_BR": {
+                    "picture": 1
+                },
+                "outer_quad/quad_TL": {
+                    "picture": 2
+                },
+                "outer_quad/quad_TR": {
+                    "picture": 1
+                }
+            },
+            "occurrence_id": "edit_2",
+            "selections": {
+                "picture": 1
+            },
+            "timing": {
+                "duration_frames": 50,
+                "rate": 25,
+                "source_in_frame": 0,
+                "start_frame": 50
+            }
+        }
+    ],
+    "definitions": [
+        {
+            "OTIO_SCHEMA": "CompositionDefinition.1",
+            "angles": [
+                {
+                    "angle_id": 1,
+                    "output_ref_id": "B01_VIDEO"
+                },
+                {
+                    "angle_id": 2,
+                    "output_ref_id": "B02_VIDEO"
+                }
+            ],
+            "attributes": {},
+            "definition_id": "MC_INNER",
+            "kind": "multicam",
+            "layers": [],
+            "name": "MC_INNER",
+            "rate": 25
+        },
+        {
+            "OTIO_SCHEMA": "CompositionDefinition.1",
+            "angles": [],
+            "attributes": {},
+            "definition_id": "FOUR_BOX",
+            "kind": "composite",
+            "layers": [
+                {
+                    "occurrence_id": "quad_TL"
+                },
+                {
+                    "occurrence_id": "quad_TR"
+                },
+                {
+                    "occurrence_id": "quad_BL"
+                },
+                {
+                    "occurrence_id": "quad_BR"
+                }
+            ],
+            "name": "FOUR_BOX",
+            "rate": 25
+        },
+        {
+            "OTIO_SCHEMA": "CompositionDefinition.1",
+            "angles": [],
+            "attributes": {},
+            "definition_id": "GRAPHICS",
+            "kind": "composite",
+            "layers": [],
+            "name": "GRAPHICS",
+            "rate": 25
+        },
+        {
+            "OTIO_SCHEMA": "CompositionDefinition.1",
+            "angles": [
+                {
+                    "angle_id": 1,
+                    "occurrence_id": "outer_quad",
+                    "output_ref_id": "OUT_QUAD"
+                },
+                {
+                    "angle_id": 2,
+                    "occurrence_id": "outer_graphic",
+                    "output_ref_id": "OUT_GRAPHICS"
+                }
+            ],
+            "attributes": {},
+            "definition_id": "MC_OUTER",
+            "kind": "multicam",
+            "layers": [],
+            "name": "MC_OUTER",
+            "rate": 25
+        }
+    ],
+    "media": [
+        {
+            "OTIO_SCHEMA": "RelinkableMedia.1",
+            "display_name": "CAM_B01",
+            "identity": {
+                "filename": "CAM_B01.mov"
+            },
+            "media_id": "CAM_B01",
+            "provenance": {},
+            "tracks": [
+                {
+                    "stream": "picture"
+                }
+            ]
+        },
+        {
+            "OTIO_SCHEMA": "RelinkableMedia.1",
+            "display_name": "CAM_B02",
+            "identity": {
+                "filename": "CAM_B02.mov"
+            },
+            "media_id": "CAM_B02",
+            "provenance": {},
+            "tracks": [
+                {
+                    "stream": "picture"
+                }
+            ]
+        },
+        {
+            "OTIO_SCHEMA": "RelinkableMedia.1",
+            "display_name": "GF01",
+            "identity": {
+                "filename": "GF01.mov"
+            },
+            "media_id": "GF01",
+            "provenance": {},
+            "tracks": [
+                {
+                    "stream": "picture"
+                }
+            ]
+        },
+        {
+            "OTIO_SCHEMA": "RelinkableMedia.1",
+            "display_name": "GK01",
+            "identity": {
+                "filename": "GK01.mov"
+            },
+            "media_id": "GK01",
+            "provenance": {},
+            "tracks": [
+                {
+                    "stream": "picture"
+                }
+            ]
+        }
+    ],
+    "operations": [
+        {
+            "OTIO_SCHEMA": "CompositeOperation.1",
+            "inputs": {
+                "bottom_left": "quad_BL",
+                "bottom_right": "quad_BR",
+                "top_left": "quad_TL",
+                "top_right": "quad_TR"
+            },
+            "operation_id": "op_quad",
+            "operation_type": "spatial_grid",
+            "parameters": {
+                "layout": "2x2",
+                "transforms": "2x2 predefined symbolic; actual NLE transform math not specified"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "CompositeOperation.1",
+            "inputs": {
+                "fill": "OUT_GF01",
+                "matte": "OUT_GK01"
+            },
+            "operation_id": "op_matte",
+            "operation_type": "external_matte",
+            "parameters": {
+                "alpha_mode": "straight",
+                "invert": false,
+                "matte_channel": "luma",
+                "out_of_range": "transparent"
+            }
+        }
+    ],
+    "output_references": [
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "MC_INNER",
+            "output_ref_id": "B01_VIDEO",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "media",
+                "media_id": "CAM_B01",
+                "stream": "picture"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "MC_INNER",
+            "output_ref_id": "B02_VIDEO",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "media",
+                "media_id": "CAM_B02",
+                "stream": "picture"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "FOUR_BOX",
+            "output_ref_id": "OUT_QUAD",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "composite_output",
+                "output_id": "QUAD_RGBA"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "GRAPHICS",
+            "output_ref_id": "OUT_GF01",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "media",
+                "media_id": "GF01",
+                "stream": "picture"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "GRAPHICS",
+            "output_ref_id": "OUT_GK01",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "media",
+                "media_id": "GK01",
+                "stream": "picture"
+            }
+        },
+        {
+            "OTIO_SCHEMA": "OutputReference.1",
+            "definition_id": "GRAPHICS",
+            "output_ref_id": "OUT_GRAPHICS",
+            "output_type": "picture",
+            "provenance": {},
+            "source": {
+                "kind": "composite_output",
+                "output_id": "GRAPHICS_RGBA"
+            }
+        }
+    ],
+    "selectors": [
+        {
+            "OTIO_SCHEMA": "MulticamSelector.1",
+            "alternatives": [
+                {
+                    "angle_id": 1
+                },
+                {
+                    "angle_id": 2
+                }
+            ],
+            "occurrence_id": "edit_1",
+            "portable_selection": {
+                "angle_id": 1,
+                "definition_id": "MC_OUTER",
+                "group_id": "picture"
+            },
+            "provenance": {},
+            "selected": {
+                "angle_id": 1
+            },
+            "selector_id": "edit_1_video",
+            "stream": "picture",
+            "timing": {
+                "duration_frames": 50,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "MulticamSelector.1",
+            "alternatives": [
+                {
+                    "angle_id": 1
+                },
+                {
+                    "angle_id": 2
+                }
+            ],
+            "occurrence_id": "edit_2",
+            "portable_selection": {
+                "angle_id": 1,
+                "definition_id": "MC_OUTER",
+                "group_id": "picture"
+            },
+            "provenance": {},
+            "selected": {
+                "angle_id": 1
+            },
+            "selector_id": "edit_2_video",
+            "stream": "picture",
+            "timing": {
+                "duration_frames": 50,
+                "start_frame": 50
+            }
+        },
+        {
+            "OTIO_SCHEMA": "MulticamSelector.1",
+            "alternatives": [
+                {
+                    "source": "boom"
+                },
+                {
+                    "source": "mix"
+                }
+            ],
+            "occurrence_id": "audio_occ_1",
+            "portable_selection": {
+                "group_id": "audio_1",
+                "source": "boom"
+            },
+            "provenance": {},
+            "selected": {
+                "source": "boom"
+            },
+            "selector_id": "audio_1",
+            "stream": "audio_1",
+            "timing": {
+                "duration_frames": 75,
+                "start_frame": 0
+            }
+        },
+        {
+            "OTIO_SCHEMA": "MulticamSelector.1",
+            "alternatives": [
+                {
+                    "source": "boom"
+                },
+                {
+                    "source": "mix"
+                }
+            ],
+            "occurrence_id": "audio_occ_2",
+            "portable_selection": {
+                "group_id": "audio_1",
+                "source": "mix"
+            },
+            "provenance": {},
+            "selected": {
+                "source": "mix"
+            },
+            "selector_id": "audio_2",
+            "stream": "audio_1",
+            "timing": {
+                "duration_frames": 25,
+                "start_frame": 75
+            }
+        }
+    ],
+    "timeline": {
+        "OTIO_SCHEMA": "Timeline.1",
+        "metadata": {},
+        "name": "Recursive multicam experiment",
+        "global_start_time": null,
+        "tracks": {
+            "OTIO_SCHEMA": "Stack.1",
+            "metadata": {},
+            "name": "Tracks",
+            "source_range": null,
+            "effects": [],
+            "markers": [],
+            "enabled": true,
+            "color": null,
+            "children": []
+        }
+    },
+    "version": "1.3-experimental"
+}
