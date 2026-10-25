@@ -61,8 +61,7 @@ python check_v13_runtime.py
 ## Further reading
 
 - [`SPECIFICATION_DRAFT.md`](SPECIFICATION_DRAFT.md) — proposed semantics, object model, limitations and open questions.
-- [`README_V13.md`](README_V13.md) — recursive resolver and typed composite demonstration.
-- [`GITHUB_DISCUSSION_DRAFT.md`](GITHUB_DISCUSSION_DRAFT.md) — proposed maintainer-facing discussion.
+- [`README_V14.md`](README_V14.md) — recursive resolver and typed composite demonstration.
 - [`CAPABILITIES.json`](CAPABILITIES.json) — illustrative capability vocabulary.
 
 This experiment is intended to help discuss **what semantics OTIO should preserve**, not to establish the correct upstream design. Feedback on how to reuse existing OTIO `Clip`, `Track`, `Stack`, composition and adapter mechanisms is especially welcome.

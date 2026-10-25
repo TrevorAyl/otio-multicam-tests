@@ -1,0 +1,22 @@
+{
+  "document": "Experimental importer capability vocabulary (not an OTIO standard)",
+  "version": 1,
+  "capabilities": [
+    "shared_definitions", "fixed_edit_selectors", "independent_av_selectors",
+    "recursive_nesting", "occurrence_local_nested_selections",
+    "multiple_simultaneous_instances", "spatial_composite", "external_matte",
+    "alpha_output", "source_locator_provenance", "source_timecode",
+    "source_channel_mapping", "preserve_unknown_extensions"
+  ],
+  "required_behaviour": {
+    "unsupported_native_feature": "Explicitly report unsupported feature; never silently claim native editable preservation",
+    "lossy_fallback": "Only with explicit opt-in, identified loss list, and viable derived media or executable effect mapping",
+    "unknown_custom_schema": "May reject or retain opaquely; never promise import without extension support",
+    "missing_or_ambiguous_media": "Do not auto-relink; flag for user resolution"
+  },
+  "example_adapter": {
+    "name": "illustrative_standard_timeline_only",
+    "supports": ["source_locator_provenance", "source_timecode"],
+    "not_claimed": ["shared_definitions", "fixed_edit_selectors", "recursive_nesting", "spatial_composite", "external_matte"]
+  }
+}
