@@ -1,0 +1,103 @@
+{
+  "recordings": {
+    "A01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 4500,
+      "backing_slot": 1,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "B01": {
+      "sync_start_frame": 125,
+      "source_in_frame": 0,
+      "duration_frames": 4250,
+      "backing_slot": 18,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "C01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 1625,
+      "backing_slot": 21,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "C02": {
+      "sync_start_frame": 2002,
+      "source_in_frame": 0,
+      "duration_frames": 2498,
+      "backing_slot": 21,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "D01": {
+      "sync_start_frame": 300,
+      "source_in_frame": 0,
+      "duration_frames": 3825,
+      "backing_slot": 23,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "E01": {
+      "sync_start_frame": 200,
+      "source_in_frame": 0,
+      "duration_frames": 4300,
+      "backing_slot": 26,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "F01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 1500,
+      "backing_slot": 28,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "F02": {
+      "sync_start_frame": 1540,
+      "source_in_frame": 0,
+      "duration_frames": 1375,
+      "backing_slot": 28,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "F03": {
+      "sync_start_frame": 3520,
+      "source_in_frame": 0,
+      "duration_frames": 980,
+      "backing_slot": 28,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "G01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 4500,
+      "backing_slot": 31,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "H01": {
+      "sync_start_frame": 500,
+      "source_in_frame": 0,
+      "duration_frames": 3375,
+      "backing_slot": 44,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "GF01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 4500,
+      "backing_slot": 45,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "GK01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 4500,
+      "backing_slot": 54,
+      "confidence": "embedded_enriched_aaf_backing"
+    },
+    "P01": {
+      "sync_start_frame": 0,
+      "source_in_frame": 0,
+      "duration_frames": 4500,
+      "backing_slot": 57,
+      "confidence": "embedded_enriched_aaf_backing"
+    }
+  },
+  "basis": "embedded CompositionDefinition.backing_placement_model"
+}

@@ -1,0 +1,9 @@
+test_audio_mono_source_provenance (test_v072.EnrichedConversionTests.test_audio_mono_source_provenance) ... ok
+test_backing_slots (test_v072.EnrichedConversionTests.test_backing_slots) ... ok
+test_no_external_sync_manifest_dependency (test_v072.EnrichedConversionTests.test_no_external_sync_manifest_dependency) ... ok
+test_picture_timing (test_v072.EnrichedConversionTests.test_picture_timing) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.049s
+
+OK

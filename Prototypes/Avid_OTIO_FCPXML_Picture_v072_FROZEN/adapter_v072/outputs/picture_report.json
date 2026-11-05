@@ -1,0 +1,126 @@
+{
+  "status": "EXPERIMENTAL_UNTESTED_IN_RESOLVE",
+  "source": "real Avid AAF-derived experimental OTIO",
+  "fps": 25,
+  "timeline_frames": 1406,
+  "timeline_edits": 12,
+  "picture_selections": 11,
+  "picture_gaps": 1,
+  "picture_angle_slots": [
+    1,
+    18,
+    21,
+    23,
+    26,
+    28,
+    31,
+    44,
+    57
+  ],
+  "media_assets": 12,
+  "angle_coverage_frames": {
+    "1": 4500,
+    "18": 4375,
+    "21": 4500,
+    "23": 4125,
+    "26": 4500,
+    "28": 4500,
+    "31": 4500,
+    "44": 3875,
+    "57": 4500
+  },
+  "provisional_placements": [],
+  "sync_manifest": "/mnt/data/Avid_OTIO_FCPXML_v072/outputs/embedded_sync_audit.json",
+  "selection_coverage_warnings": [],
+  "edit_decisions": [
+    {
+      "kind": "picture",
+      "pos": 0,
+      "duration": 38,
+      "slot": 1,
+      "source_start": 0
+    },
+    {
+      "kind": "picture",
+      "pos": 38,
+      "duration": 30,
+      "slot": 18,
+      "source_start": 133
+    },
+    {
+      "kind": "picture",
+      "pos": 68,
+      "duration": 33,
+      "slot": 21,
+      "source_start": 68
+    },
+    {
+      "kind": "picture",
+      "pos": 101,
+      "duration": 37,
+      "slot": 23,
+      "source_start": 326
+    },
+    {
+      "kind": "picture",
+      "pos": 138,
+      "duration": 29,
+      "slot": 26,
+      "source_start": 438
+    },
+    {
+      "kind": "picture",
+      "pos": 167,
+      "duration": 36,
+      "slot": 28,
+      "source_start": 167
+    },
+    {
+      "kind": "picture",
+      "pos": 203,
+      "duration": 49,
+      "slot": 31,
+      "source_start": 167
+    },
+    {
+      "kind": "picture",
+      "pos": 252,
+      "duration": 36,
+      "slot": 44,
+      "source_start": 857
+    },
+    {
+      "kind": "gap",
+      "pos": 288,
+      "duration": 46
+    },
+    {
+      "kind": "picture",
+      "pos": 334,
+      "duration": 33,
+      "slot": 57,
+      "source_start": 334
+    },
+    {
+      "kind": "picture",
+      "pos": 367,
+      "duration": 556,
+      "slot": 1,
+      "source_start": 367
+    },
+    {
+      "kind": "picture",
+      "pos": 923,
+      "duration": 483,
+      "slot": 31,
+      "source_start": 1123
+    }
+  ],
+  "limitations": [
+    "Audio and composite effects omitted by design",
+    "Source offset semantics inferred from AAF Selector StartTime and not independently verified against the Avid source-group timeline",
+    "Placements of sources not in sync_manifest are provisional; independent video/audio sync not certified",
+    "Media source start and locator require relink validation",
+    "No Resolve import has been tested"
+  ]
+}

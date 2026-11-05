@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.14">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p25" frameDuration="1/25s" width="1920" height="1080" />
+    <asset id="r2" name="A01.mov" start="36000/1s" duration="180/1s" format="r1" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="16" audioRate="48000">
+      <media-rep kind="original-media" src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/A01.mov" />
+    </asset>
+    <media id="r3" name="Avid A01 mono-output diagnostic">
+      <multicam format="r1" tcStart="36000/1s" tcFormat="NDF">
+        <mc-angle angleID="aaf-a01-audio-slot-2" name="A01 audio output 2 (mono diagnostic)">
+          <asset-clip ref="r2" name="A01.mov" offset="0/1s" start="36000/1s" duration="180/1s" srcEnable="audio" />
+        </mc-angle>
+      </multicam>
+    </media>
+  </resources>
+  <library>
+    <event name="Avid audio channel diagnostic">
+      <project name="Avid A01 mono audio test">
+        <sequence format="r1" duration="4/1s" tcStart="0/1s" tcFormat="NDF">
+          <spine>
+            <mc-clip ref="r3" offset="0/1s" start="36000/1s" duration="4/1s" name="A01 mono diagnostic">
+              <mc-source angleID="aaf-a01-audio-slot-2" srcEnable="audio" />
+            </mc-clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>
