@@ -1,0 +1,14 @@
+{
+  "input_mono_backing_slot": 2,
+  "source_media_slot": 2,
+  "source_media_channels_declared": 16,
+  "duration_test_frames": 100,
+  "selected_audio_angle": "aaf-a01-audio-slot-2",
+  "limitations": [
+    "Diagnostic audio only: may import 16 channels, not one mono channel",
+    "FCPXML lacks an experimentally validated mapping for selected AAF source channel 2",
+    "audioRate 48000 is an unverified test assumption; confirm actual file properties",
+    "No independent Avid audio edits, per-track channel assignment or sample-accurate routing tested",
+    "Native Resolve import has not been tested"
+  ]
+}

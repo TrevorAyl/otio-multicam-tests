@@ -1,0 +1,9 @@
+{
+  "OTIO_SCHEMA": "PluginManifest.1",
+  "schemadefs": [{
+    "OTIO_SCHEMA": "SchemaDef.1",
+    "name": "multicam_schemadef",
+    "execution_scope": "in process",
+    "filepath": "multicam_schemadef.py"
+  }]
+}

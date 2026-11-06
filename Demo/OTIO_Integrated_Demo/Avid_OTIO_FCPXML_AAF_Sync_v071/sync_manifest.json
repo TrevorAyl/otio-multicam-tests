@@ -1,0 +1,91 @@
+{
+  "fps": 25,
+  "origin": "Avid 59-slot CompositionMob backing timeline origin",
+  "basis": "Exact SourceClip start from preceding Filler/SourceClip lengths in original AAF structure; no source-TC inference",
+  "recordings": {
+    "A01": {
+      "sync_start_frame": 0,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 1,
+      "source_in_frame": 0,
+      "duration_frames": 4500
+    },
+    "B01": {
+      "sync_start_frame": 125,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 18,
+      "source_in_frame": 0,
+      "duration_frames": 4250
+    },
+    "C01": {
+      "sync_start_frame": 0,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 21,
+      "source_in_frame": 0,
+      "duration_frames": 1625
+    },
+    "C02": {
+      "sync_start_frame": 2002,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 21,
+      "source_in_frame": 0,
+      "duration_frames": 2498
+    },
+    "D01": {
+      "sync_start_frame": 300,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 23,
+      "source_in_frame": 0,
+      "duration_frames": 3825
+    },
+    "E01": {
+      "sync_start_frame": 200,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 26,
+      "source_in_frame": 0,
+      "duration_frames": 4300
+    },
+    "F01": {
+      "sync_start_frame": 0,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 28,
+      "source_in_frame": 0,
+      "duration_frames": 1500
+    },
+    "F02": {
+      "sync_start_frame": 1540,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 28,
+      "source_in_frame": 0,
+      "duration_frames": 1375
+    },
+    "F03": {
+      "sync_start_frame": 3520,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 28,
+      "source_in_frame": 0,
+      "duration_frames": 980
+    },
+    "G01": {
+      "sync_start_frame": 0,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 31,
+      "source_in_frame": 0,
+      "duration_frames": 4500
+    },
+    "H01": {
+      "sync_start_frame": 500,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 44,
+      "source_in_frame": 0,
+      "duration_frames": 3375
+    },
+    "P01": {
+      "sync_start_frame": 0,
+      "confidence": "aaf_backing_composition_segment",
+      "backing_slot": 57,
+      "source_in_frame": 0,
+      "duration_frames": 4500
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.14">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p25" frameDuration="1/25s" width="1920" height="1080" />
+    <asset id="r2" name="A01.mov" start="36000/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/A01.mov" kind="original-media" />
+    </asset>
+    <asset id="r3" name="B01.mov" start="36005/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/B01.mov" kind="original-media" />
+    </asset>
+    <asset id="r4" name="C01.mov" start="900002/25s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/C01.mov" kind="original-media" />
+    </asset>
+    <asset id="r5" name="C02.mov" start="902002/25s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/C02.mov" kind="original-media" />
+    </asset>
+    <asset id="r6" name="D01.mov" start="900298/25s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/D01.mov" kind="original-media" />
+    </asset>
+    <asset id="r7" name="E01.mov" start="0/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/E01.mov" kind="original-media" />
+    </asset>
+    <asset id="r8" name="F01.mov" start="0/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/F01.mov" kind="original-media" />
+    </asset>
+    <asset id="r9" name="F02.mov" start="0/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/F02.mov" kind="original-media" />
+    </asset>
+    <asset id="r10" name="F03.mov" start="0/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/F03.mov" kind="original-media" />
+    </asset>
+    <asset id="r11" name="G01.mov" start="36000/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/G01.mov" kind="original-media" />
+    </asset>
+    <asset id="r12" name="H01.mov" start="36020/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/H01.mov" kind="original-media" />
+    </asset>
+    <asset id="r13" name="P01.mov" start="36000/1s" duration="180/1s" format="r1" hasVideo="1">
+      <media-rep src="file:///Users/otio-test/Documents/Otio%20Multicam/Media/P01.mov" kind="original-media" />
+    </asset>
+    <media id="r14" name="Avid MCAM EDIT — picture-only v0.6">
+      <multicam format="r1" tcStart="36000/1s" tcFormat="NDF">
+        <mc-angle angleID="aaf-video-slot-1" name="A01">
+          <asset-clip ref="r2" name="A01.mov" offset="0/1s" start="36000/1s" duration="180/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-18" name="B01">
+          <asset-clip ref="r3" name="B01.mov" offset="5/1s" start="36005/1s" duration="170/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-21" name="C01+C02">
+          <asset-clip ref="r4" name="C01.mov" offset="2/25s" start="900002/25s" duration="65/1s" srcEnable="video" />
+          <asset-clip ref="r5" name="C02.mov" offset="2002/25s" start="902002/25s" duration="2498/25s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-23" name="D01">
+          <asset-clip ref="r6" name="D01.mov" offset="298/25s" start="900298/25s" duration="153/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-26" name="E01">
+          <asset-clip ref="r7" name="E01.mov" offset="0/1s" start="0/1s" duration="172/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-28" name="F01+F02+F03">
+          <asset-clip ref="r8" name="F01.mov" offset="0/1s" start="0/1s" duration="60/1s" srcEnable="video" />
+          <asset-clip ref="r9" name="F02.mov" offset="60/1s" start="0/1s" duration="55/1s" srcEnable="video" />
+          <asset-clip ref="r10" name="F03.mov" offset="115/1s" start="0/1s" duration="196/5s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-31" name="G01">
+          <asset-clip ref="r11" name="G01.mov" offset="2/25s" start="36000/1s" duration="180/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-44" name="H01">
+          <asset-clip ref="r12" name="H01.mov" offset="20/1s" start="36020/1s" duration="135/1s" srcEnable="video" />
+        </mc-angle>
+        <mc-angle angleID="aaf-video-slot-57" name="P01">
+          <asset-clip ref="r13" name="P01.mov" offset="0/1s" start="36000/1s" duration="180/1s" srcEnable="video" />
+        </mc-angle>
+      </multicam>
+    </media>
+  </resources>
+  <library>
+    <event name="Avid OTIO picture interchange test">
+      <project name="Avid MCAM EDIT — picture only v0.6">
+        <sequence format="r1" duration="1406/25s" tcStart="0/1s" tcFormat="NDF">
+          <spine>
+            <mc-clip ref="r14" name="AAF video slot 1" offset="0/1s" start="36000/1s" duration="38/25s">
+              <mc-source angleID="aaf-video-slot-1" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 18" offset="38/25s" start="900133/25s" duration="6/5s">
+              <mc-source angleID="aaf-video-slot-18" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 21" offset="68/25s" start="900068/25s" duration="33/25s">
+              <mc-source angleID="aaf-video-slot-21" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 23" offset="101/25s" start="900326/25s" duration="37/25s">
+              <mc-source angleID="aaf-video-slot-23" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 26" offset="138/25s" start="900438/25s" duration="29/25s">
+              <mc-source angleID="aaf-video-slot-26" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 28" offset="167/25s" start="900167/25s" duration="36/25s">
+              <mc-source angleID="aaf-video-slot-28" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 31" offset="203/25s" start="900167/25s" duration="49/25s">
+              <mc-source angleID="aaf-video-slot-31" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 44" offset="252/25s" start="900857/25s" duration="36/25s">
+              <mc-source angleID="aaf-video-slot-44" srcEnable="video" />
+            </mc-clip>
+            <gap offset="288/25s" start="0/1s" duration="46/25s" name="AAF picture filler" />
+            <mc-clip ref="r14" name="AAF video slot 57" offset="334/25s" start="900334/25s" duration="33/25s">
+              <mc-source angleID="aaf-video-slot-57" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 1" offset="367/25s" start="900367/25s" duration="556/25s">
+              <mc-source angleID="aaf-video-slot-1" srcEnable="video" />
+            </mc-clip>
+            <mc-clip ref="r14" name="AAF video slot 31" offset="923/25s" start="901123/25s" duration="483/25s">
+              <mc-source angleID="aaf-video-slot-31" srcEnable="video" />
+            </mc-clip>
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

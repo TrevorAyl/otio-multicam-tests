@@ -1,0 +1,92 @@
+{
+  "1": [
+    {
+      "recording": "A01",
+      "offset": 0,
+      "duration": 4500,
+      "source_in": 0
+    }
+  ],
+  "18": [
+    {
+      "recording": "B01",
+      "offset": 125,
+      "duration": 4250,
+      "source_in": 0
+    }
+  ],
+  "21": [
+    {
+      "recording": "C01",
+      "offset": 0,
+      "duration": 1625,
+      "source_in": 0
+    },
+    {
+      "recording": "C02",
+      "offset": 2002,
+      "duration": 2498,
+      "source_in": 0
+    }
+  ],
+  "23": [
+    {
+      "recording": "D01",
+      "offset": 300,
+      "duration": 3825,
+      "source_in": 0
+    }
+  ],
+  "26": [
+    {
+      "recording": "E01",
+      "offset": 200,
+      "duration": 4300,
+      "source_in": 0
+    }
+  ],
+  "28": [
+    {
+      "recording": "F01",
+      "offset": 0,
+      "duration": 1500,
+      "source_in": 0
+    },
+    {
+      "recording": "F02",
+      "offset": 1540,
+      "duration": 1375,
+      "source_in": 0
+    },
+    {
+      "recording": "F03",
+      "offset": 3520,
+      "duration": 980,
+      "source_in": 0
+    }
+  ],
+  "31": [
+    {
+      "recording": "G01",
+      "offset": 0,
+      "duration": 4500,
+      "source_in": 0
+    }
+  ],
+  "44": [
+    {
+      "recording": "H01",
+      "offset": 500,
+      "duration": 3375,
+      "source_in": 0
+    }
+  ],
+  "57": [
+    {
+      "recording": "P01",
+      "offset": 0,
+      "duration": 4500,
+      "source_in": 0
+    }
+  ]
+}
